@@ -1,0 +1,117 @@
+/* =================== */
+/* COMPONENTE: NAVEGACIÓN */
+/* =================== */
+
+/* 
+
+<link rel="stylesheet" href="css/components/navigation.css">
+
+
+*/
+
+
+/* Navegación base */
+.navegacion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.navegacion__enlace {
+  position: relative;
+  font-size: 1.8rem;
+  font-family: var(--fuenteHeading);
+  color: var(--blanco);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+/* Efecto glitch */
+.glitch-link::before,
+.glitch-link::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  color: var(--primario);
+  background: transparent;
+  overflow: hidden;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.glitch-link::before {
+  top: -2px;
+  text-shadow: 2px 0 red;
+  animation: glitchNavTop 1.5s infinite linear alternate-reverse;
+}
+
+.glitch-link::after {
+  bottom: -2px;
+  text-shadow: -2px 0 blue;
+  animation: glitchNavBottom 1.5s infinite linear alternate-reverse;
+}
+
+@keyframes glitchNavTop {
+  0% { clip-path: inset(0 0 80% 0); }
+  50% { clip-path: inset(0 0 10% 0); transform: translateX(2px); }
+  100% { clip-path: inset(0 0 60% 0); transform: translateX(-2px); }
+}
+
+@keyframes glitchNavBottom {
+  0% { clip-path: inset(80% 0 0 0); }
+  50% { clip-path: inset(10% 0 0 0); transform: translateX(-2px); }
+  100% { clip-path: inset(60% 0 0 0); transform: translateX(2px); }
+}
+
+/* 💡 Responsive con Media Queries */
+
+/* Teléfonos pequeños */
+@media (max-width: 480px) {
+  .navegacion {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .navegacion__enlace {
+    font-size: 1.6rem;
+    padding: 0.8rem;
+    text-decoration: none;
+  }
+}
+
+/* Tablets verticales (iPad mini, etc) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .navegacion {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1.5rem;
+  }
+
+  .navegacion__enlace {
+    font-size: 1.7rem;
+  }
+}
+
+/* Tablets grandes y laptops medianos */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navegacion__enlace {
+    font-size: 1.9rem;
+  }
+}
+
+/* Escritorio grande */
+@media (min-width: 1025px) {
+  .navegacion__enlace {
+    font-size: 2rem;
+  }
+}

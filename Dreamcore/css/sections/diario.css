@@ -1,0 +1,55 @@
+/* ========================= */
+/* SECCIÓN: Diario del Soñador */
+/* ========================= */
+
+/* 
+
+<link rel="stylesheet" href="css/sections/diario.css">
+<link rel="stylesheet" href="css/sections/entrada.css">
+<link rel="stylesheet" href="css/sections/sobre-nosotros.css">
+<link rel="stylesheet" href="css/sections/main.css">
+
+
+*/
+
+
+.entrada-diario {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-left: 4px solid var(--acento);
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 0 15px rgba(28, 28, 28, 0.7);
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2rem;
+  color: var(--gris);
+  line-height: 1.8;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.entrada-diario:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(129, 247, 216, 0.2);
+}
+
+.entrada-diario time {
+  display: block;
+  font-size: 1.6rem;
+  color: var(--acento);
+  margin-bottom: 1.5rem;
+  font-family: var(--fuenteHeading);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Animación de entrada para el diario */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
