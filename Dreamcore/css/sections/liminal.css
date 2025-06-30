@@ -1,0 +1,53 @@
+/* Mejora para sección principal del home */
+.intro-liminal {
+  padding: 5rem 2rem;
+  max-width: 70rem;
+  margin: 0 auto;
+  text-align: center; /* ✅ CENTRAR TODO */
+}
+
+.intro-liminal .boton {
+  margin-top: 2rem;
+}
+
+
+.intro-liminal p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  color: var(--gris-claro); /* Asegúrate que existe o reemplázalo por #ccc */
+  font-family: var(--fuenteParrafos);
+  text-align: center;
+}
+
+
+/* Mejora visual para la sección 'sobre nosotros' */
+.sobre-nosotros.mejorado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.sobre-nosotros.mejorado img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(129, 247, 216, 0.1);
+}
+
+.texto-sobre-nosotros h3 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: var(--primario);
+  font-family: var(--fuenteHeading);
+}
+
+.texto-sobre-nosotros p {
+  font-size: 1.7rem;
+  line-height: 1.7;
+  color: var(--gris);
+  font-family: var(--fuenteParrafos);
+}

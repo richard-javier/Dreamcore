@@ -1,0 +1,57 @@
+/* ============================== */
+/* HEADER: LOGO + TEXTO CENTRAL  */
+/* ============================== */
+
+/* Contenedor de barra (logo + navegación) */
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+
+/* Logo principal */
+.logo {
+  font-size: 3.2rem;
+  color: var(--primario);
+  margin: 0;
+  font-family: var(--fuenteHeading);
+}
+
+/* Contenedor del texto central del header */
+.header__texto {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.header__texto h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: var(--blanco);
+  font-family: var(--fuenteHeading);
+}
+
+.header__texto p {
+  font-size: 2rem;
+  color: var(--gris);
+  font-style: italic;
+}
+
+/* Título adicional en el header (ej. "Tu Voz en el Vacío") */
+/* Centrado del título dentro del contenido principal */
+main h2.glitch-text {
+  text-align: center;
+  font-size: 3.6rem;
+  color: var(--primario);
+  margin-bottom: 3rem;
+}
+
+
+/* 
+/css/layout/header.css
+
+<!-- Header -->
+<link rel="stylesheet" href="css/layout/header.css">
+
+*/
