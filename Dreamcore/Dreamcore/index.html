@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espacios Olvidados</title>
+
+    <!-- ✅ Rutas correctas desde /Dreamcore/index.html -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base/variables.css" />
+    <link rel="stylesheet" href="css/base/reset.css" />
+    <link rel="stylesheet" href="css/components/buttons.css" />
+    <link rel="stylesheet" href="css/components/glitch.css" />
+    <link rel="stylesheet" href="css/components/navigation.css" />
+    <link rel="stylesheet" href="css/components/forms.css" />
+    <link rel="stylesheet" href="css/components/preloader.css" />
+    <link rel="stylesheet" href="css/layout/footer.css" />
+    <link rel="stylesheet" href="css/layout/header.css" />
+    <link rel="stylesheet" href="css/layout/responsive.css" />
+    <link rel="stylesheet" href="css/sections/diario.css" />
+    <link rel="stylesheet" href="css/sections/entrada.css" />
+    <link rel="stylesheet" href="css/sections/sobre-nosotros.css" />
+    <link rel="stylesheet" href="css/sections/main.css" />
+    <link rel="stylesheet" href="css/sections/intro.css" />
+  </head>
+
+  <body>
+    <!-- ✅ Pantalla de introducción -->
+    <div class="intro-screen" id="introScreen">
+      <div class="intro-mensaje">
+        <h1 class="glitch-text" data-text="Presiona cualquier tecla para entrar…">
+          Presiona cualquier tecla para entrar…
+        </h1>
+      </div>
+    </div>
+
+    <!-- ✅ Contenido principal oculto hasta interacción -->
+    <main class="main-content hidden" id="mainContent">
+      <div class="contenedor centrar-texto">
+        <h2>Bienvenido a <span class="logo__bold">Espacios Olvidados</span></h2>
+        <a href="home/home.html" class="boton boton--primario">Explorar</a>
+      </div>
+    </main>
+
+    <!-- ✅ Audio de fondo -->
+    <audio id="ambiente" src="sonido/ambiente.mp3" preload="auto"></audio>
+
+    <!-- ✅ Script para entrada -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
